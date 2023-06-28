@@ -76,7 +76,7 @@ async function seed() {
       `.trim(),
     },
   ];
-  
+
   for (const post of posts) {
     await prisma.post.upsert({
       where: { slug: post.slug },
@@ -84,7 +84,6 @@ async function seed() {
       create: post,
     });
   }
-  
 
   console.log(`Database has been seeded. 🌱`);
 }
@@ -97,5 +96,3 @@ seed()
   .finally(async () => {
     await prisma.$disconnect();
   });
-
-  
