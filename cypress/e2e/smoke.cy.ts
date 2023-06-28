@@ -1,4 +1,6 @@
 /// <reference types="cypress" />
+/// <reference types="@testing-library/cypress" />
+
 import { faker } from "@faker-js/faker";
 
 describe("smoke tests", () => {
