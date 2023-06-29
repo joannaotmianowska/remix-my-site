@@ -6,7 +6,6 @@ import { useOptionalUser } from "~/utils";
 export const meta: V2_MetaFunction = () => [{ title: "Joanna Otmianowska" }];
 
 export default function Index() {
-  const user = useOptionalUser();
   return (
     <main className="relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center">
       <div className="relative sm:pb-16 sm:pt-8">
