@@ -24,6 +24,7 @@ export default function Index() {
           <div className="bg-inherit">
             <img
               className="h-full w-full rounded-2xl object-cover"
+              alt="main photo my portrait"
               src="https://github.com/joannaotmianowska/my-site/assets/20688756/e058e077-57e5-4d20-bac8-04c5a0ac39a4"
             />
           </div>
