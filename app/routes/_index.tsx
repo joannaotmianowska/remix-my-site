@@ -1,67 +1,65 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 
-import { useOptionalUser } from "~/utils";
-
 export const meta: V2_MetaFunction = () => [{ title: "Joanna Otmianowska" }];
 
 export default function Index() {
   return (
-    <main className="relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center">
-      <div className="relative sm:pb-16 sm:pt-8">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
-            <div className="absolute inset-0">
-              {/* <img
-                className="h-full w-full object-cover"
-                src="https://github.com/joannaotmianowska/my-site/assets/20688756/47f06169-a618-4449-8d16-818c8efb79f5"
-                alt="Sonic Youth On Stage"
-              /> */}
-              {/* <div className="absolute inset-0 bg-[color:rgba(254,204,27,0.5)] mix-blend-multiply" /> */}
-              {/* <div className="absolute inset-0 bg-[color:rgba(0,0,0,0)] mix-blend-multiply" /> */}
+    <div className="bg-my-beige">
+      <nav className="sticky top-0 bg-my-orange p-10 font-bold text-black">
+        <h5>Joanna Otmianowska</h5>
+        <ul>
+          <li>
+            <Link to="">O mnie</Link>
+            <Link to="/posts">Newslettery</Link>
+            <Link to="/podcasts">Odcinki podcastu</Link>
+            <Link to="">Instagram</Link>
+            <Link to="">Programuj, dziewczyno!</Link>
+            <Link to="">Blog</Link>
+          </li>
+        </ul>
+      </nav>
+      <main className="mx-auto w-screen bg-my-beige p-20">
+        <div className="flex-column container mx-auto flex max-w-7xl gap-20 bg-inherit sm:px-6 lg:px-8">
+          <div className="bg-inherit">
+            <img
+              className="h-full w-full rounded-2xl object-cover"
+              src="https://github.com/joannaotmianowska/my-site/assets/20688756/e058e077-57e5-4d20-bac8-04c5a0ac39a4"
+            />
+          </div>
+          <div className="text-left font-bold leading-loose tracking-tight">
+            <h2 className="py-20 sm:text-4xl lg:text-5xl">
+              Kod. Nauka. Planowanie. Notatki. Macierzyństwo. Dobrostan. Balans.
+              Odpoczynek.
+            </h2>
+            <div className="sm-text-2xl mb-10 cursor-pointer rounded-2xl bg-my-orange p-10 text-center lg:text-3xl">
+              <Link to="/posts">
+                Archiwalne newslettery <br></br> "Pretekst do rozmyślań"
+              </Link>
             </div>
-            <div className="relative px-4 pb-8 pt-16 sm:px-6 sm:pb-14 sm:pt-24 lg:px-8 lg:pb-20 lg:pt-32">
-              <h1 className="text-center text-6xl font-extrabold tracking-tight sm:text-8xl lg:text-9xl">
-                <span className="block uppercase text-yellow-500 drop-shadow-md">
-                  Pod pretekstem
-                </span>
-              </h1>
-              <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
-                Check the README.md file for instructions on how to get this
-                project deployed.
-              </p>
-              <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
-                <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                  <Link
-                    to="/posts"
-                    className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
-                  >
-                    Newslettery
-                  </Link>
-                </div>
-                <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                  <Link
-                    to="/podcasts"
-                    className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
-                  >
-                    Podcasty
-                  </Link>
-                </div>
-              </div>
-              <a href="https://remix.run">
-                <img
-                  src="https://user-images.githubusercontent.com/1500684/158298926-e45dafff-3544-4b69-96d6-d3bcc33fc76a.svg"
-                  alt="Remix"
-                  className="mx-auto mt-16 w-full max-w-[12rem] md:max-w-[16rem]"
-                />
-              </a>
+            <div className="sm-text-2xl cursor-pointer rounded-2xl bg-my-orange p-10 text-center lg:text-3xl">
+              <Link to="/podcasts">
+                Odcinki podcastu <br></br>"Pod pretekstem"
+              </Link>
             </div>
           </div>
         </div>
-        <div className="mx-auto max-w-7xl px-4 py-2 sm:px-6 lg:px-8">
-          <div className="mt-6 flex flex-wrap justify-center gap-8">footer</div>
-        </div>
+      </main>
+      <div className="sm:text-1xl mx-auto w-screen bg-my-violet p-20 text-left leading-loose text-white lg:text-2xl">
+        <p className="container">
+          Nazywam się Joanna Otmianowska. Szukam pretekstów do rozmyślań i
+          rozmów. Programuję, piszę, ćwiczę jogę, staram się łapać balans i mam
+          sto nowych pomysłów na minutę. Zachęcam kobiety do kodowania w FB
+          grupie "Programuj, dziewczyno!", a na moim koncie na IG pokazuję moje
+          poszukiwania dobrostanu. Teraz jestem na urlopie macierzyńskim, ale
+          poza życiem mamy pracuję jako programistka. W nowej odsłonie mojego
+          newslettera zapraszam Cię do wspólnego szukania pretekstów do
+          rozmyślań. Oprócz tematów związanych z IT, pojawią się też takie
+          związane z innymi aspektami życia. Masz ochotę razem porozkminiać?
+          Zapisz się i widzimy się w Twojej skrzynce mailowej co dwa tygodnie w
+          sobotni poranek.
+        </p>
       </div>
-    </main>
+    </div>
   );
 }
