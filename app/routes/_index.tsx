@@ -6,21 +6,21 @@ export const meta: V2_MetaFunction = () => [{ title: "Joanna Otmianowska" }];
 export default function Index() {
   return (
     <div className="bg-my-beige">
-      <nav className="sticky top-0 bg-my-orange p-10 font-bold text-black">
-        <h5>Joanna Otmianowska</h5>
-        <ul>
-          <li>
-            <Link to="">O mnie</Link>
-            <Link to="/posts">Newslettery</Link>
-            <Link to="/podcasts">Odcinki podcastu</Link>
-            <Link to="">Instagram</Link>
-            <Link to="">Programuj, dziewczyno!</Link>
-            <Link to="">Blog</Link>
-          </li>
+      <nav className="sticky top-0 bg-my-blue p-10 font-bold text-white flex justify-between">
+        <h5 className="flex-none"><Link to="/">Joanna Otmianowska</Link></h5>
+        <ul className="grow flex justify-end gap-x-11">
+          
+        <li className=""><Link to="">O mnie</Link></li>
+        <li><Link to="/posts">Newslettery</Link></li>
+        <li> <Link to="/podcasts">Odcinki podcastu</Link></li>
+        <li> <Link to="">Instagram</Link></li>
+        <li> <Link to="">Programuj, dziewczyno!</Link></li>
+        <li>  <Link to="">Blog</Link></li>
+          
         </ul>
       </nav>
-      <main className="mx-auto w-screen bg-my-beige p-20">
-        <div className="flex-column container mx-auto flex max-w-7xl gap-20 bg-inherit sm:px-6 lg:px-8">
+      <main className="mx-auto w-screen bg-my-orange p-20">
+        <div className="bg-my-orange flex-column container mx-auto flex max-w-7xl gap-20 bg-inherit sm:px-6 lg:px-8">
           <div className="bg-inherit">
             <img
               className="h-full w-full rounded-2xl object-cover"
@@ -29,16 +29,16 @@ export default function Index() {
             />
           </div>
           <div className="text-left font-bold leading-loose tracking-tight">
-            <h2 className="py-20 sm:text-4xl lg:text-5xl">
+            <h2 className="py-20 sm:text-4xl lg:text-5xl text-white">
               Kod. Nauka. Planowanie. Notatki. Macierzyństwo. Dobrostan. Balans.
               Odpoczynek.
             </h2>
-            <div className="sm-text-2xl mb-10 cursor-pointer rounded-2xl bg-my-orange p-10 text-center lg:text-3xl">
+            <div className="sm-text-2xl mb-10 cursor-pointer rounded-2xl bg-my-blue p-10 text-center lg:text-3xl text-white">
               <Link to="/posts">
                 Archiwalne newslettery <br></br> "Pretekst do rozmyślań"
               </Link>
             </div>
-            <div className="sm-text-2xl cursor-pointer rounded-2xl bg-my-orange p-10 text-center lg:text-3xl">
+            <div className="sm-text-2xl cursor-pointer rounded-2xl bg-my-blue p-10 text-center lg:text-3xl text-white">
               <Link to="/podcasts">
                 Odcinki podcastu <br></br>"Pod pretekstem"
               </Link>
