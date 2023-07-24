@@ -6,10 +6,6 @@ This is a work in progress project of my site that will gather all of the conten
 
 Learn more about [Remix Stacks](https://remix.run/stacks).
 
-```sh
-npx create-remix@latest --template remix-run/indie-stack
-```
-
 ## What's in the stack
 
 - [Fly app deployment](https://fly.io) with [Docker](https://www.docker.com/)
