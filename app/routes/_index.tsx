@@ -12,33 +12,34 @@ export default function Index() {
   return (
     <div>
       <nav className="sticky top-0 bg-my-beige font-bold text-black lg:flex lg:items-center lg:justify-between">
-        <h5 className="mx-4 my-4 hidden flex-none lg:block">
+        <h5 className="mx-4 my-4 hidden flex-none hover:text-my-orange lg:block">
           <Link to="/">Joanna Otmianowska</Link>
         </h5>
         <div className="items-right flex justify-between">
           <span
-            className="mx-4 cursor-pointer text-3xl lg:hidden"
+            className="mx-4 cursor-pointer text-3xl hover:text-white lg:hidden"
             onClick={openCloseNavbar}
           >
             menu
           </span>
           <ul
             className={
-              "top=[-400px] absolute left-0 z-[-1] flex w-full grow flex-col bg-my-beige py-4 pl-7 opacity-0 transition-all duration-500 ease-in lg:static lg:z-auto lg:w-auto lg:flex-row lg:items-center lg:justify-end lg:py-0 lg:pl-0 lg:text-right lg:opacity-100" +
+              "absolute left-0 z-[-1] flex w-full grow flex-col bg-my-beige pt-10 opacity-0 transition-all duration-500 ease-in lg:static lg:z-auto lg:w-auto lg:flex-row lg:items-center lg:justify-end lg:py-0 lg:pl-0 lg:text-right lg:opacity-100" +
               (navbarOpen ? " opacity-100" : " opacity-0")
             }
+            onMouseLeave={() => setNavbarOpen(false)}
           >
-            <li className="mx-4 my-4 cursor-pointer duration-500 hover:bg-my-orange hover:text-white lg:my-0 lg:w-auto">
+            <li className="cursor-pointer p-4 duration-500 hover:bg-my-orange hover:text-white lg:my-0 lg:w-auto">
               <Link to="">O mnie</Link>
             </li>
-            <li className="mx-4 my-4 cursor-pointer duration-500 hover:bg-my-orange hover:text-white lg:my-0">
+            <li className="cursor-pointer p-4 duration-500 hover:bg-my-orange hover:text-white lg:my-0">
               <Link to="/posts">Archiwalne newslettery</Link>
             </li>
-            <li className="mx-4 my-4 cursor-pointer duration-500 hover:bg-my-orange hover:text-white lg:my-0">
+            <li className="cursor-pointer p-4 duration-500 hover:bg-my-orange hover:text-white lg:my-0">
               {" "}
               <Link to="/podcasts">Odcinki podcastu</Link>
             </li>
-            <li className="mx-4 my-4 cursor-pointer duration-500 hover:bg-my-orange hover:text-white lg:my-0">
+            <li className="cursor-pointer p-4 duration-500 hover:bg-my-orange hover:text-white lg:my-0">
               {" "}
               <Link
                 to="https://www.instagram.com/joanna.otmianowska/"
@@ -47,7 +48,7 @@ export default function Index() {
                 Instagram
               </Link>
             </li>
-            <li className="mx-4 my-4 cursor-pointer duration-500 hover:bg-my-orange hover:text-white lg:my-0">
+            <li className="cursor-pointer p-4 duration-500 hover:bg-my-orange hover:text-white lg:my-0">
               {" "}
               <Link
                 to="https://www.facebook.com/groups/programujdziewczyno"
@@ -56,7 +57,7 @@ export default function Index() {
                 Programuj, dziewczyno!
               </Link>
             </li>
-            <li className="mx-4 my-4 cursor-pointer duration-500 hover:bg-my-orange hover:text-white lg:my-0">
+            <li className="cursor-pointer p-4 duration-500 hover:bg-my-orange hover:text-white lg:my-0">
               {" "}
               <Link to="https://www.wakeupandcode.pl/" target="_blank">
                 Blog
