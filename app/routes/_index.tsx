@@ -1,6 +1,7 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export const meta: V2_MetaFunction = () => [{ title: "Joanna Otmianowska" }];
 
@@ -11,20 +12,20 @@ export default function Index() {
 
   return (
     <div>
-      <nav className="sticky top-0 bg-my-beige font-bold text-black lg:flex lg:items-center lg:justify-between">
+      <nav className="sticky top-0 bg-my-beige font-bold text-black lg:flex lg:items-center lg:justify-between shadow-sm">
         <h5 className="mx-4 my-4 hidden flex-none hover:text-my-orange lg:block">
           <Link to="/">Joanna Otmianowska</Link>
         </h5>
-        <div className="items-right flex justify-between">
+        <div className="items-right flex justify-between lg:bg-my-beige bg-my-orange">
           <span
-            className="mx-4 cursor-pointer text-3xl hover:text-white lg:hidden"
+            className="mx-4 my-4 cursor-pointer text-3xl text-white lg:hidden flex justify-between"
             onClick={openCloseNavbar}
           >
-            menu
+            { navbarOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </span>
           <ul
             className={
-              "absolute left-0 z-[-1] flex w-full grow flex-col bg-my-beige pt-10 opacity-0 transition-all duration-500 ease-in lg:static lg:z-auto lg:w-auto lg:flex-row lg:items-center lg:justify-end lg:py-0 lg:pl-0 lg:text-right lg:opacity-100" +
+              "absolute left-0 z-[-1] flex w-full grow flex-col lg:bg-my-beige lg:text-black text-white bg-my-orange pt-12 opacity-0 transition-all duration-500 ease-in lg:static lg:z-auto lg:w-auto lg:flex-row lg:items-center lg:justify-end lg:py-0 lg:pl-0 lg:text-right lg:opacity-100" +
               (navbarOpen ? " opacity-100" : " opacity-0")
             }
             onMouseLeave={() => setNavbarOpen(false)}
