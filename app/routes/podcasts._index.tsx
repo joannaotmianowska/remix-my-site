@@ -1,3 +1,9 @@
+import Navigation from "~/components/navigation";
+
 export default function Podcasts() {
-  return <main>TBD</main>;
+  return (
+    <main>
+      <Navigation highlighted={"podcasts"} />
+    </main>
+  );
 }
