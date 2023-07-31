@@ -12,10 +12,23 @@ export default function Navigation({ highlighted }: NavItems) {
   const openCloseNavbar = () => setNavbarOpen(navbarOpen ? false : true);
 
   return (
-    <nav className="sticky top-0 bg-my-beige font-bold text-black shadow-sm lg:flex lg:items-center lg:justify-between">
-      <h5 className="hidden flex-none px-4 py-4 hover:text-my-orange lg:block">
-        <Link to="/">Joanna Otmianowska</Link>
-      </h5>
+    <nav className="sticky top-0 my-0 flex items-stretch justify-between bg-my-orange py-0 font-bold text-black lg:bg-my-beige">
+      <Link
+        to="/"
+        className="mx-2 my-2 flex max-h-10 flex-none cursor-pointer items-center justify-center px-4 py-4"
+      >
+        <img
+          className="mr-3 hidden max-h-10 lg:block"
+          alt="logo"
+          src="https://github.com/joannaotmianowska/my-site/assets/20688756/7daa9edf-5a33-41c0-8685-df79e375d53f"
+        />
+        <img
+          className="mr-3 block max-h-10 lg:hidden"
+          alt="logo"
+          src="https://github.com/joannaotmianowska/my-site/assets/20688756/2e43cec2-fcf5-4f77-a610-07e4246f32ce"
+        />
+        <span className="text-white lg:text-black">Joanna Otmianowska</span>
+      </Link>
       <div className="items-right flex justify-between bg-my-orange lg:bg-my-beige">
         <span
           className="mx-4 my-4 flex cursor-pointer justify-between text-3xl text-white lg:hidden"
@@ -33,7 +46,7 @@ export default function Navigation({ highlighted }: NavItems) {
           <li
             className={
               "cursor-pointer p-4 duration-500 hover:bg-my-orange hover:text-white lg:my-0" +
-              (highlighted === "newsletters" && " bg-my-orange")
+              (highlighted === "newsletters" && "bg-my-orange")
             }
           >
             <Link to="/posts">Archiwalne newslettery</Link>
@@ -41,7 +54,7 @@ export default function Navigation({ highlighted }: NavItems) {
           <li
             className={
               "cursor-pointer p-4 duration-500 hover:bg-my-orange hover:text-white lg:my-0" +
-              (highlighted === "podcasts" && " bg-my-orange")
+              (highlighted === "podcasts" && "bg-my-orange")
             }
           >
             {" "}
