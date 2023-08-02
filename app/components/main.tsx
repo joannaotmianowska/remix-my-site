@@ -17,7 +17,7 @@ export default function Main() {
               Kod. Nauka. Planowanie. Notatki. Macierzyństwo. Dobrostan. Balans.
               Odpoczynek.
             </h2>
-            <div className="sm-text-2xl mb-10 cursor-pointer rounded-2xl bg-my-blue p-10 text-center text-white lg:text-3xl">
+            {/* <div className="sm-text-2xl mb-10 cursor-pointer rounded-2xl bg-my-blue p-10 text-center text-white lg:text-3xl">
               <Link to="/posts">
                 Archiwalne newslettery <br></br> "Pretekst do rozmyślań"
               </Link>
@@ -26,7 +26,7 @@ export default function Main() {
               <Link to="/podcasts">
                 Odcinki podcastu <br></br>"Pod pretekstem"
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>
