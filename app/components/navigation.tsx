@@ -33,6 +33,7 @@ export default function Navigation({ highlighted }: NavItems) {
         <span
           className="mx-4 my-4 flex cursor-pointer justify-between text-3xl text-white lg:hidden"
           onClick={openCloseNavbar}
+          data-cy="nav-icon"
         >
           {navbarOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
         </span>
