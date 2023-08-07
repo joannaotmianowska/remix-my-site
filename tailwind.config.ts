@@ -8,6 +8,7 @@ export default {
     },
     extend: {
       colors: {
+        "my-blue": "#013D76",
         "my-violet": "#CAB8DB",
         "my-orange": "#ECA7A4",
         "my-pink": "#EF91B3",

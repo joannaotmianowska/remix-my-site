@@ -15,6 +15,11 @@ import stylesheet from "~/tailwind.css";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
+  {
+    rel: 'icon',
+    href: 'https://github-production-user-asset-6210df.s3.amazonaws.com/20688756/257153588-7daa9edf-5a33-41c0-8685-df79e375d53f.png',
+    type: 'image/png',
+  },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
