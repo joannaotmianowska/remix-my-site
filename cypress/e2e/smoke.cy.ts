@@ -15,7 +15,7 @@ describe("smoke tests", () => {
     cy.findByText("Tu będą odcinki podcastu");
   });
 
-  it.skip("should show working navigation on mobile", () => {
+  it("should show working navigation on mobile", () => {
     cy.viewport("iphone-8");
     cy.visitAndCheck("/");
 
