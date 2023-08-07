@@ -1,7 +1,22 @@
 export default function Main() {
   return (
     <>
-      <main className="mx-auto w-screen bg-my-beige p-20">
+      <main className="mx-auto w-screen bg-my-beige font-extralight">
+        <div className="bg-inherit mx-4 flex items-center justify-center gap-20">
+          <div className="h-[55rem]">
+            <img
+              className="object-contain max-h-full h-[55rem]"
+              alt="main my portrait"
+              src="https://github.com/joannaotmianowska/my-site/assets/20688756/e058e077-57e5-4d20-bac8-04c5a0ac39a4"
+            />
+          </div>
+          <h5 className="text-3xl max-w-lg leading-10">
+          Cześć! Jestem Joanna. Szukam pretekstów do rozmyślań i
+          rozmów. Programuję, piszę, robię kreatywne rzeczy, staram się łapać balans i mam sto nowych pomysłów na minutę. Piszę newslettery, w których zachęcam do wspólnego rozmyślania - możesz przeczytać je w archiwum albo zapisać się poniżej i dostawać je regularnie. 
+          </h5>
+        </div>
+      </main>
+      {/* <main className="mx-auto w-screen bg-my-beige p-20">
         <div className="flex-column max-w-8xl container mx-auto flex gap-20 bg-inherit sm:px-6 lg:px-8">
           <div className="bg-inherit">
             <img
@@ -32,7 +47,7 @@ export default function Main() {
           Zapisz się i widzimy się w Twojej skrzynce mailowej co dwa tygodnie w
           sobotni poranek.
         </p>
-      </div>
+      </div> */}
     </>
   );
 }
