@@ -19,13 +19,13 @@ describe("smoke tests", () => {
     cy.viewport("iphone-8");
     cy.visitAndCheck("/");
 
-    cy.get('[data-cy="nav-icon"]').click()
+    cy.get('[data-cy="nav-icon"]').click();
     cy.findByText("Archiwalne newslettery").click();
     cy.findByText("Tu będą newslettery");
 
     cy.visitAndCheck("/");
-    cy.get('[data-cy="nav-icon"]').click()
-    
+    cy.get('[data-cy="nav-icon"]').click();
+
     cy.findByText("Odcinki podcastu").click();
     cy.findByText("Tu będą odcinki podcastu");
   });
