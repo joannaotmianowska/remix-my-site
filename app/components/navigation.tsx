@@ -12,7 +12,7 @@ export default function Navigation({ highlighted }: NavItems) {
   const openCloseNavbar = () => setNavbarOpen(navbarOpen ? false : true);
 
   return (
-    <nav className="sticky top-0 my-0 flex items-stretch justify-between bg-my-orange py-0 font-bold text-black lg:bg-my-beige">
+    <nav className="sticky top-0 my-0 flex items-stretch justify-between bg-my-orange py-0 font-semibold text-black lg:bg-my-beige">
       <Link
         to="/"
         className="mx-2 my-2 flex max-h-10 flex-none cursor-pointer items-center justify-center px-4 py-4"
