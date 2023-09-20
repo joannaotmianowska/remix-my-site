@@ -7,7 +7,7 @@ export const meta: V2_MetaFunction = () => [{ title: "Joanna Otmianowska" }];
 
 export default function Index() {
   return (
-    <div>
+    <div className="min-h-screen bg-my-beige">
       <Navigation />
       <Main />
       <Footer />
