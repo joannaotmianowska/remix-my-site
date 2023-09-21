@@ -2,6 +2,7 @@ import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 import { getPosts } from "~/models/post.server";
 import Navigation from "~/components/navigation";
+import Footer from '~/components/footer';
 
 export const loader = async () => {
   return json({ posts: await getPosts() });
@@ -10,7 +11,7 @@ export const loader = async () => {
 export default function Posts() {
   const { posts } = useLoaderData<typeof loader>();
   return (
-    <main>
+    <main className="min-h-screen bg-my-beige flex flex-col">
       <Navigation highlighted={"newsletters"} />
       <Link to="admin" className="text-red-600 underline">
         Admin
@@ -25,6 +26,7 @@ export default function Posts() {
           </li>
         ))}
       </ul>
+      <Footer />
     </main>
   );
 }
