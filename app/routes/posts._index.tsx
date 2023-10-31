@@ -18,7 +18,7 @@ export default function Posts() {
         <ul className="text-2xl">
           {posts.map((post) => (
             <li key={post.slug}>
-              <Link to={post.slug} className="text-blue-600 underline">
+              <Link to={post.slug} className="cursor-pointer italic hover:underline hover:text-violet-600">
                 {post.title}
               </Link>
             </li>
