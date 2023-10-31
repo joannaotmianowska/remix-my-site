@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
+import { episode1 } from "./newsletters/episode-001";
 
 const prisma = new PrismaClient();
 
@@ -42,13 +43,9 @@ async function seed() {
 
   const posts = [
     {
-      slug: "my-first-post",
+      slug: "odcinek-001",
       title: "My First Post",
-      markdown: `
-  # This is my first post
-  
-  Isn't it great?
-      `.trim(),
+      markdown: episode1.trim(),
     },
     {
       slug: "90s-mixtape",

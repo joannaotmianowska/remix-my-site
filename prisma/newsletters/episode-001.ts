@@ -1,9 +1,4 @@
----
-slug: newsletter-001
-title: Monthly Newsletter - September 2023
-date: 2023-09-21
----
-
+export const episode1 = `
 # Monthly Newsletter - September 2023
 
 Welcome to our September newsletter! Stay updated with the latest news and updates from our community.
@@ -60,3 +55,4 @@ Thank you for being part of our community! Stay connected with us for more updat
 Subscribe to our newsletter to receive monthly updates directly in your inbox.
 
 [Subscribe Now](#subscribe)
+`
