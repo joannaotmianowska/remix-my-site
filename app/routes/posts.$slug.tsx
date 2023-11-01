@@ -21,7 +21,7 @@ export const loader = async ({ params }: LoaderArgs) => {
 export default function PostSlug() {
   const { html, post } = useLoaderData<typeof loader>();
   return (
-    <main className="min-h-screen font-extralight bg-my-beige">
+    <main className="min-h-screen bg-my-beige font-extralight">
       <Navigation highlighted={"newsletters"} />
       <div className="mx-4 bg-inherit lg:mx-10 lg:flex-row lg:gap-20 lg:py-20">
         <h1 className="my-6 border-b-2 text-center text-3xl">{post.title}</h1>
